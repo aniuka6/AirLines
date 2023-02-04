@@ -14,7 +14,7 @@ public class Plane {
 
     private Luggage[] luggages = new Luggage[passengerNumber];
 
-    void addPassanger(Passenger passenger, Luggage luggage) {
+    public void addPassanger(Passenger passenger, Luggage luggage) {
         if ((passengerNumber < MAX_AIRCRAFT_SEAT) && ((passengersWeight + passenger.getWeight() + luggage.getLuggageWeight()) < MAX_AIRCRAFT_PAYLOAD) &&
                 (passenger.getPesel().length() == 11)) {
             passengers[passengerNumber] = passenger;
