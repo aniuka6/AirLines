@@ -18,7 +18,7 @@ public class Plane {
         if ((passengerNumber < MAX_AIRCRAFT_SEAT) && ((passengersWeight + passenger.getWeight() + luggage.getLuggageWeight()) < MAX_AIRCRAFT_PAYLOAD) &&
                 (passenger.getPesel().length() == 11)) {
             passengers[passengerNumber] = passenger;
-            System.out.println("Dodano pasażera");
+            System.out.println("Dodano pasażera" + passenger.getName());
             passengerNumber++;
             passengersWeight = (passengersWeight + passenger.getWeight() + luggage.getLuggageWeight());
         } else {
