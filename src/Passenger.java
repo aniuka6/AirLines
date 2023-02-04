@@ -1,10 +1,10 @@
 public class Passenger{
     private String name;
-    private int pesel;
+    private String pesel;
     private double weight;
     private Luggage luggage;
 
-    public Passenger(String name, int pesel, double weight){
+    public Passenger(String name, String pesel, double weight){
         this.name = name;
         this.pesel = pesel;
         this.weight = weight;
@@ -19,11 +19,11 @@ public class Passenger{
         this.name = name;
     }
 
-    public int getPesel() {
+    public String getPesel() {
         return pesel;
     }
 
-    public void setPesel(int pesel) {
+    public void setPesel(String pesel) {
         this.pesel = pesel;
     }
 
